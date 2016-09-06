@@ -1,0 +1,31 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin circle($radius, $color, $borderColor){
+	border-radius: $radius;
+	background-color: $color;
+	border: 3px solid $borderColor;
+}
+
+@function getColumnWidth($width, $numColumns, $margin){
+	@return ($width / $numColumns) - ($margin * 2);
+}
+
+.base-font{
+	font-family: 'Poiret One', cursive;
+	font-size: 14px;
+	line-height: 16px;
+}
