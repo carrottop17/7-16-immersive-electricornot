@@ -1,5 +1,12 @@
 /* line 1, ../../compass/sass/styles.scss */
 body {
   margin: 0px;
-  color: red;
+  color: #BCEC76;
+  background-color: #00773A;
+  text-align: center;
+}
+
+/* line 7, ../../compass/sass/styles.scss */
+img {
+  width: 300px;
 }

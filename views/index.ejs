@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+</head>
+<body>
+
+	<h1> A node.js voting game - is the electric car below really electric?</h1>
+	
+	<div id="image">
+		<img src="/images/<%= imageToRender %>">
+	</div>
+
+	<div class="button-holder">
+		<div class="button-form">
+			<form class="vote-button" action="electric" method="post">
+				<input type="hidden" name="image" value="<%= imageToRender %>">
+				<input type="submit" name="submit" class="btn btn-info" value="Electric!">
+			</form>
+		</div>
+	</div>
+
+	<div class="button-holder">
+		<div class="button-form">
+			<form class="vote-button" action="electric" method="post">
+				<input type="hidden" name="image" value="<%= imageToRender %>">
+				<input type="submit" name="submit" class="btn btn-info" value="Poser!">
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
