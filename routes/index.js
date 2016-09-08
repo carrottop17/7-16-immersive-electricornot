@@ -4,7 +4,7 @@ var router = express.Router();
 //1. connect to mongodb
 var mongodb = require('mongodb');
 var mongoClient = mongodb.MongoClient;
-var mongoUrl = 'mongodb://localhost:27017/electric'
+var mongoUrl = 'mongodb://localhost:27017/lego'
 var db; //global so all of our routes have access to the db connection
 
 mongoClient.connect(mongoUrl, function(error, database){
@@ -60,9 +60,9 @@ router.post('/electric', function(req, res, next){
 	//1. we know whether they voted electric or poser because its in req.body.submit
 	//2. we know what image they voted on because it's in req.body.image
 	//3. we know who they are because we have their IP address
-if(req.body.submit == 'Electric!'){
+if(req.body.submit == 'Lego!'){
 	var upDownVote = 1;
-}else if(req.body.submit == "Poser!"){
+}else if(req.body.submit == "Fake!"){
 	var upDownVote = -1;
 }
 	db.collection('votes').insert({

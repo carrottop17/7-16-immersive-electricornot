@@ -9,30 +9,39 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
 </head>
 <body>
-
-	<h1> A node.js voting game - is the electric car below really electric?</h1>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <img alt="Lego" src="/images/legologo.png" id="lego">
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+	<h1> Is this real Lego or Fake?</h1>
 	
-	<div id="image">
+	<div id="imgHolder">
 		<img src="/images/<%= imageToRender %>">
 	</div>
-
-	<div class="button-holder">
-		<div class="button-form">
-			<form class="vote-button" action="electric" method="post">
-				<input type="hidden" name="image" value="<%= imageToRender %>">
-				<input type="submit" name="submit" class="btn btn-info" value="Electric!">
-			</form>
+	
+		<div class="button-holder">
+			<div class="button-form">
+				<form class="vote-button" action="electric" method="post">
+					<input type="hidden" name="image" value="<%= imageToRender %>">
+					<input type="submit" name="submit" class="btn btn-primary" value="Lego!">
+				</form>
+			</div>
 		</div>
-	</div>
 
-	<div class="button-holder">
-		<div class="button-form">
-			<form class="vote-button" action="electric" method="post">
-				<input type="hidden" name="image" value="<%= imageToRender %>">
-				<input type="submit" name="submit" class="btn btn-info" value="Poser!">
-			</form>
+		<div class="button-holder">
+			<div class="button-form">
+				<form class="vote-button" action="electric" method="post">
+					<input type="hidden" name="image" value="<%= imageToRender %>">
+					<input type="submit" name="submit" class="btn btn-danger" value="Fake!">
+				</form>
+			</div>
 		</div>
-	</div>
+	
 
 </body>
 </html>

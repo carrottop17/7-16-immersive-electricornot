@@ -7,6 +7,34 @@ body {
 }
 
 /* line 7, ../../compass/sass/styles.scss */
-img {
-  width: 300px;
+#imgHolder img {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 18, ../../compass/sass/styles.scss */
+#imgHolder {
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* line 27, ../../compass/sass/styles.scss */
+.button-holder {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* line 32, ../../compass/sass/styles.scss */
+#lego {
+  width: 75px;
 }
