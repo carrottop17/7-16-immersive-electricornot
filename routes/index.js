@@ -120,7 +120,7 @@ router.get('/resetUserVotes', (req, res, next) =>{
 router.get('/', function(req, res){
   res.render('index');
 });
-
+//multer
 router.post('/', multer({ dest: './public/images/'}).single('upl'), function(req,res){
 	console.log(req.body); //form fields
 	/* example output:
