@@ -8,8 +8,8 @@ body {
 
 /* line 7, ../../compass/sass/styles.scss */
 #imgHolder img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 350px;
+  max-height: 350px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -20,8 +20,8 @@ body {
 
 /* line 18, ../../compass/sass/styles.scss */
 #imgHolder {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background-color: white;
   margin: auto;
   position: relative;
@@ -37,4 +37,9 @@ body {
 /* line 32, ../../compass/sass/styles.scss */
 #lego {
   width: 75px;
+}
+
+/* line 36, ../../compass/sass/styles.scss */
+.navbar-btn {
+  margin-right: 10px;
 }

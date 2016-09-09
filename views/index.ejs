@@ -12,13 +12,21 @@
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">
+	      <a class="navbar-brand" href="/">
 	        <img alt="Lego" src="/images/legologo.png" id="lego">
 	      </a>
+
 	    </div>
+	    <a href="/resetUserVotes"><button type="button" class="btn btn-info navbar-btn navbar-right">Reset</button></a>
+	    <form method="post" enctype="multipart/form-data" action="/">
+			
+			<input type="submit" name="submit" class="btn btn-info navbar-btn navbar-right" value="Upload">
+			<input type="file" name="upl" class="btn navbar-btn navbar-right">
+		</form>
 	  </div>
+
 	</nav>
-	<h1> Is this real Lego or Fake?</h1>
+	<h1><u>Real</u> Lego or Fake?</h1>
 	
 	<div id="imgHolder">
 		<img src="/images/<%= imageToRender %>">
@@ -40,6 +48,11 @@
 					<input type="submit" name="submit" class="btn btn-danger" value="Fake!">
 				</form>
 			</div>
+		</div>
+
+		<div class="upload-form">
+			
+
 		</div>
 	
 
